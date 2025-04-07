@@ -109,6 +109,18 @@ Clone the repository:
 cd RegistrationFormAPI</pre>
 
 Update the connection string in appsettings.json and appsettings.Development.json with your PostgreSQL credentials.
+<pre lang="markdown"> {
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "AllowedHosts": "*",
+  "ConnectionStrings": {
+    "PostgreSQL": "Host=localhost;Port=5432;Database=registrationdb;Username=postgres;Password=your_password;"
+  }
+}  </pre>
 
 Restore NuGet packages:
 
